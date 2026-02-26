@@ -1,41 +1,152 @@
-# Prerequisites
-*.d
+# =========================================================
+# 1) Build outputs (C/C++ / CMake / Ninja)
+# =========================================================
+# Common build folders
+build/
+Build/
+out/
+bin/
+obj/
 
-# Compiled Object files
-*.slo
-*.lo
+# Any nested build/out folders
+**/build/
+**/Build/
+**/out/
+**/bin/
+**/obj/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+cmake-build-*/
+CMakeUserPresets.json.user
+compile_commands.json
+
+# Ninja files/logs
+.ninja_log
+.ninja_deps
+build.ninja
+rules.ninja
+*.ninja
+
+# =========================================================
+# 2) C/C++ compiled artifacts
+# =========================================================
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
+*.lo
+*.a
+*.lib
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
 *.out
 *.app
 
-# debug information files
-*.dwo
+# Debug / symbols
+*.pdb
+*.ipdb
+*.iobj
+*.ilk
+*.idb
+*.pch
+*.tlog
+*.lastbuildstate
+*.dmp
+
+# =========================================================
+# 3) Visual Studio / MSBuild / Windows IDE artifacts
+# =========================================================
+# VS cache/settings
+.vs/
+*.suo
+*.user
+*.userosscache
+*.slnx
+
+# IntelliSense / browse database
+*.VC.db
+*.VC.VC.opendb
+ipch/
+*.ipch
+
+# MSBuild output folders (often created by VS)
+Debug/
+Release/
+x64/
+Win32/
+**/Debug/
+**/Release/
+**/x64/
+**/Win32/
+
+# Visual Studio temp
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+
+# =========================================================
+# 4) Editors (VS Code / JetBrains / others)
+# =========================================================
+.vscode/
+.idea/
+*.iml
+
+# CLion / JetBrains CMake build dirs
+cmake-build-debug/
+cmake-build-release/
+cmake-build-relwithdebinfo/
+cmake-build-minsizerel/
+
+# =========================================================
+# 5) Python (nếu repo có dùng script)
+# =========================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+venv/
+env/
+.venv/
+myvenv/
+
+# =========================================================
+# 6) Logs & temp
+# =========================================================
+*.log
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# =========================================================
+# 7) OS junk
+# =========================================================
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# =========================================================
+# 8) Optional: package manager caches (bật nếu bạn dùng)
+# =========================================================
+# vcpkg
+vcpkg_installed/
+.vcpkg-root/
+
+# Conan
+.conan/
+conan.lock
+
+# =========================================================
+# END
+# =========================================================
