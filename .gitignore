@@ -148,25 +148,5 @@ vcpkg_installed/
 conan.lock
 
 # =========================================================
-# 9) KEEP required input/output .txt (matrix/result) even in out/build
-# =========================================================
-
-# --- out/ : unignore folder, ignore all contents, then allow only needed txt ---
-!**/out/
-**/out/**
-!**/out/**/
-!**/out/**/matrixA_*.txt
-!**/out/**/matrixB_*.txt
-!**/out/**/resultMatrix_*.txt
-
-# --- build/ : same logic ---
-!**/build/
-**/build/**
-!**/build/**/
-!**/build/**/matrixA_*.txt
-!**/build/**/matrixB_*.txt
-!**/build/**/resultMatrix_*.txt
-
-# =========================================================
 # END
 # =========================================================
