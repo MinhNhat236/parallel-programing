@@ -38,7 +38,7 @@ def save_result_to_file(result, filename):
     np.savetxt(filename, result, fmt='%d')
 
 def main():
-    sizes = [100, 200, 400, 1000]
+    sizes = [200, 400, 800, 1200, 1600, 2000]
     
     for size in sizes:
         fileA = f"matrixA_{size}.txt"

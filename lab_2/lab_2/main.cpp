@@ -5,7 +5,6 @@
 #include <ctime>
 #include <chrono>
 #include <omp.h>
-#include <string>
 
 using namespace std;
 using namespace chrono;
@@ -99,7 +98,7 @@ void saveExecutionTimes(const string& filename, int size, int num_threads, doubl
 
 int main() {
     srand(time(0));
-    vector<int> sizes = { 100, 200, 400, 1000 };
+    vector<int> sizes = { 200, 400, 800, 1200, 1600, 2000 };
     vector<int> thread_counts = { 0, 2, 4, 8 };
     string timeFile = "execution_times.txt";
 
