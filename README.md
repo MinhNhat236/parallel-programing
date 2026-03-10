@@ -73,7 +73,8 @@ https://github.com/MinhNhat236/parallel-programing/tree/lab-2#
 
 Ниже представлен график зависимости времени выполнения от размера матрицы и количества потоков.
 
-![Execution Time Graph](diagram.png)
+<img width="1001" height="630" alt="diagram" src="https://github.com/user-attachments/assets/24caccb5-14f3-4038-8461-ae5d7c347289" />
+
 
 График показывает, как использование нескольких потоков позволяет значительно сократить время выполнения программы.
 
