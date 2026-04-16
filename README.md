@@ -113,15 +113,14 @@ C[i][j] = \sum_{k=0}^{N-1} A[i][k] \cdot B[k][j]
 
 ### 4.3. Графики
 
-В рамках работы были построены графики зависимости времени выполнения от размера матрицы:
+### BLOCK_SIZE = 8
+![BLOCK_SIZE 8](block_size_8.png)
 
-- CPU vs GPU (`8x8`)
-- CPU vs GPU (`16x16`)
-- CPU vs GPU (`32x32`)
+### BLOCK_SIZE = 16
+![BLOCK_SIZE 16](block_size_16.png)
 
-Графики строились в Python с использованием библиотек `pandas` и `matplotlib` на основе файла `result.txt`.
-
----
+### BLOCK_SIZE = 32
+![BLOCK_SIZE 32](block_size_32.png)
 
 ## 5. Анализ результатов
 
