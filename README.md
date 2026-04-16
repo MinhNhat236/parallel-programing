@@ -154,9 +154,3 @@ C[i][j] = \sum_{k=0}^{N-1} A[i][k] \cdot B[k][j]
 
 ---
 
-## 7. Инструкция по сборке и запуску
-
-### Компиляция CUDA-программы
-
-```bash
-nvcc matrix_cuda_benchmark.cu -o matrix_cuda_benchmark
